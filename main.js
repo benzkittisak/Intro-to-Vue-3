@@ -11,5 +11,10 @@ const app = Vue.createApp({
             ],
             sizes: ['S', 'M', 'L', 'XL']
         }
+    },
+    methods:{
+        changeColor(color){
+            this.image = './assets/images/socks_'+color+'.jpg'
+        }
     }
 })
